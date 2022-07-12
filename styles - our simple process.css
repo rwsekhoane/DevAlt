@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Roboto:ital,wght@0,700;1,400&family=Stick+No+Bills:wght@200;800&display=swap');
+
+*{
+  margin: 0;
+  padding:0;
+  font-family: montserrat;}
+
+  .banner {
+    width: 100%;
+    background-color: white;
+    z-index: -1;
+
+  }
+/*Navigation bar*/
+
+  .logo {
+    font-family: 'Stick No Bills';
+    font-size: 70px;
+    font-weight: 800;
+    color: rgba(31, 30, 30, 0.9);
+  }
+
+  strong {
+    color:rgb(0, 149, 218) ;
+    font-weight: 900;
+  }
+
+  .navbar {
+    max-width: 100%;
+    margin-left: 35px;
+    padding: 20px 0;
+    display:inline-flex;
+    align-items:center ;
+  }
+
+  .navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    left:300px;
+    position: relative;
+    text-transform:uppercase;
+
+    
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    color:rgba(31, 30, 30, 0.8);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .navbar ul li a:hover, 
+  .navbar ul li a.active { 
+  background:white ;
+  color:rgb(0, 149, 218);}
+
+  .navbar .contact{
+    color:white;
+    background:#068bf8 ;
+    padding: 5px;border-radius: 5px;
+  }
+
+  .navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0%;
+    background:#068bf8;
+    position: absolute;
+    left:0;bottom: -10px;
+    transition: 0.5s;}
+    
+    .navbar ul li:hover::after{
+    content:'';
+    height: 3px;
+    width: 100%;
+    background:rgb(0, 149, 218) ;
+    color: rgb(0, 149, 218) ;
+    position: absolute;
+    left:0;bottom: -10px;}
+
+    .navbar .sign-in:hover{
+      color:#068bf8;
+    background:white ;
+    }
+    
+
+    /* 3D box animation*/
+
+   
+    /*clock*/
+
+.clock {
+  position: absolute;
+  margin-top:-25px;
+  margin-left: -30px;
+  font-weight: 200;
+  font-size: 16px;
+  background-color:transparent;
+  color: rgba(0, 0, 0, 0.8);
+  height:20px;width:500px;
+  transform: scale(0.5);
+}
+#clock {max-width: 100%;}
+
+  
+    /* 3D box animation*/
+   
+    .text{
+      color: #F8FFFD;
+      background:white;
+      ;position: absolute;
+      top:140px;
+      left:40px;
+      right:-40px;
+      width:95%;
+      height:400px;
+    }
+    .text h2 {
+      color: rgba(0, 0, 0, 0.8); 
+      position: relative;
+      width: 500px;
+      margin-top: 30px;
+      margin-left: 30px;
+      font-weight: 600;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+      padding-bottom: 10px;
+      
+
+    }
+    .text p {
+      color: #F8FFFD; 
+      position: absolute;
+      top:100px;
+      width:400px;
+      margin-left: 30px;
+      font-weight: 550;
+      font-size: 14px;
+    }
+    
+   section{
+    align-items: center;
+    width: 100%;
+   }
+
+    
+    .flow img{
+    position:absolute;
+    top:-200px;
+    height: 80px;
+    margin-top: 300px;
+    margin-left: -80px;
+    width:80px; 
+    align-items:center;
+      
+   }
+   .flow ul{
+      text-align: center;
+      height:80px;  
+    }
+
+    .flow ul li{
+      display:inline-block;
+      width: 200px;
+      height: 80px;
+      background: transparent;
+      margin-top: 0px; 
+    }
+    
+    .progress-wrapper{
+      position: absolute;
+      align-items: center;
+      top:200px;
+      left: 150px;
+      width: 900px;
+      background: rgba(31, 30, 30, 0.9);
+      border-radius: 50px;
+      padding:5px;
+       }
+
+    .progress-bar {
+      width: 0;
+      height: 20px;
+      border-radius: 50px;
+      animation: barMove 5s linear infinite;
+      }
+
+      .bar-1{
+        background: repeating-linear-gradient(-40deg, white, white 30px, rgb(0, 149, 218) 20px, rgb(0, 149, 218) 40px);
+        }
+
+        @keyframes barMove{
+          0%{
+            width:0%;
+            }
+          100%{
+            width:100%;
+          }
+        }
+        .process {
+        display: inline-block;
+        position:absolute;
+        top:40px;
+        left: 250px;
+        max-width: 150%;
+        margin-left: -200px;
+        padding: 20px 0;
+        display:inline-flex;
+        align-items:center ; 
+        }
+        .process ul{
+        display: inline-block;
+        text-align: center;
+        }
+    
+        .process ul li{
+          display:inline-block;
+          width: 200px;
+          background: transparent;
+          margin-top: 10px; 
+          color: black;
+        }
+        .process .step{
+          margin-top: 20px;
+          font-weight: 600;
+          font-size: 18px;
+          color:black;
+        }
+        .process .step-1{
+          margin-top: 20px;
+          font-weight: 600;
+          font-size: 30px;
+          color:rgb(0, 149, 218);
+        }
+        .process .step-2{
+          margin-top: 20px;
+          font-weight: 600;
+          font-size: 30px;
+          color:rgba(188, 24, 136, 1);
+        }
+        .process .step-3{
+          margin-top: 20px;
+          font-weight: 600;
+          font-size: 30px;
+          color:rgba(240, 148, 51, 1);
+        }
+        .process .step-4{
+          margin-top: 20px;
+          font-weight: 600;
+          font-size: 30px;
+          color:rgba(24, 188, 125, 1);
+        }
+        .process .description{
+          margin-top: 20px;
+          color: rgba(31, 30, 30, 0.9);
+          font-weight: 600;
+        }
+       
+    
+
